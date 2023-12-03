@@ -6,9 +6,9 @@ import Checkout from './components/Checkout';
 
 const App = () => {
   const foodItems = [
-    { recipe_id: 1, name: 'Pizzaa', image: 'https://th.bing.com/th/id/OIP.r66UTpTf5Kai2aza99WIiQHaHa?rs=1&pid=ImgDetMain', price: 100 },
+    { recipe_id: 1, name: 'Pizza', image: 'https://th.bing.com/th/id/OIP.r66UTpTf5Kai2aza99WIiQHaHa?rs=1&pid=ImgDetMain', price: 100 },
     { recipe_id: 2, name: 'Burger', image: 'burger.jpg', price: 100 },
-    { recipe_id: 3,  name: 'Noodles', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqG2i4Q3ePis0GuEe8p2FcewJ2eVMWqhi7hg&usqp=CAU', price: 100 },
+    { recipe_id: 3,  name: 'Noodless', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqG2i4Q3ePis0GuEe8p2FcewJ2eVMWqhi7hg&usqp=CAU', price: 100 },
 
   ];
 
