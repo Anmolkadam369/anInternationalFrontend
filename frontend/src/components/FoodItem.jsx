@@ -169,9 +169,8 @@ console.log(confirmedSelections)
     });
   }, [quantity, selectedAddOns, addOnQuantity, price]);
 
-  return (
-    
-    <div className="flex flex-col items-center w-1/4 p-4 mt-5">
+    return (
+    <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 mt-5">
       {/* Image in a circle with customized box shadow */}
       <div className="relative w-40 h-40 mb-2 mt-5">
         <div className="absolute w-full h-full rounded-full overflow-hidden shadow-2xl shadow-cyan-900">
@@ -180,7 +179,7 @@ console.log(confirmedSelections)
       </div>
   
       {/* Card for the item details */}
-      <div className="border p-6 max-w-md text-center shadow-lg shadow-cyan-900 rounded-2xl relative z-10 w-60 h-100 bg-white">
+      <div className="border p-6 max-w-md text-center shadow-lg shadow-cyan-900 rounded-2xl relative z-10 w-full h-100 bg-white">
         <h2 className="text-xl font-semibold mb-4">{name}</h2>
   
         <div className="flex flex-col items-center justify-center">
@@ -220,9 +219,7 @@ console.log(confirmedSelections)
             <div className="mb-4">
               <p className="text-gray-700 font-semibold">
                 {Object.entries(selectedAddOns).map(([addOn, addOnQuantity]) => (
-                  <span key={addOn}>
-                    {/* {`${addOn}-${addOnQuantity} `} */}
-                  </span>
+                  <span key={addOn}>{/* {`${addOn}-${addOnQuantity} `} */}</span>
                 ))}
               </p>
             </div>
@@ -242,14 +239,14 @@ console.log(confirmedSelections)
             </div>
           )}
         </div>
-        <button onClick={handleConfirm} className="mt-4 bg-green-500 text-white px-4 py-2 rounded">
+        <button
+          onClick={handleConfirm}
+          className="mt-4 bg-green-500 text-white px-4 py-2 rounded sm:w-32 md:w-40 lg:w-48"
+        >
           Confirm
         </button>
       </div>
-      
-     
     </div>
-    
   );
   
         }
