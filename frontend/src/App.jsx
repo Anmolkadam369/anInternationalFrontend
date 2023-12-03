@@ -1,3 +1,4 @@
+
 // App.js
 import React from 'react';
 import FoodItem from './components/FoodItem';
@@ -18,17 +19,19 @@ const App = () => {
       </div>
 
       <div className='flex flex-wrap justify-center'>
-
         {foodItems.map((item, index) => (
           <FoodItem key={index} {...item} />
         ))}
+      </div>
 
+      {/* Place the Checkout component at the end of the page */}
+      <div className='flex justify-center mt-5'>
         <div className='m-10 p-2 w-64 shadow-lg shadow-cyan-900 rounded-lg h-62'>
           <Checkout />
         </div>
       </div>
-      
     </div>
   );
 };
-export default App;
+
+export default App;
